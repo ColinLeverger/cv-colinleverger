@@ -1,0 +1,147 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+\usepackage{verbatim} %comments
+
+% moderncv themes
+\moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{green}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+\usepackage{pdfpages}
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+
+% adjust the page margins
+\usepackage[scale=0.9, bottom=0.4cm,top=1cm]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Colin}{Leverger}
+\title{Computer and DevOps Engineer}                               % optional, remove / comment the line if not wanted
+\address{1 bis rue du Couesnon}{35133 JAVENE}{FRANCE}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\phone[mobile]{+33~(0)633~504722}                   % optional, remove / comment the line if not wanted
+%\phone[fixed]{+2~(345)~678~901}                    % optional, remove / comment the line if not wanted
+%\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
+\email{colinleverger@gmail.com}                               % optional, remove / comment the line if not wanted
+\homepage{www.colinleverger.fr}                         % optional, remove / comment the line if not wanted
+\extrainfo{\href{https://www.linkedin.com/in/colinleverger}{LinkedIn: lnkdin.me/cleverger}}                 % optional, remove / comment the line if not wanted
+%\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{Higher education}
+
+\cventry
+	{2014 - 2017}
+	{Master 2 Degree in Computer Science via an apprenticeship program at a highly selective graduate engineering school}
+	{E.N.S.S.A.T.}
+	{Lannion - FRANCE}
+	{}
+	{Curriculum Networking, Multimedia \& Computing Science.\\
+    \underline{Main subjects}: Network Applications, Systems Architecture, Design of Services \& of User Interfaces.}  % arguments 3 to 6 can be left empty
+
+\cventry
+	{2012 - 2014}
+    {Two year Undergraduate University Degree of Technology in Electronics and Computing}
+    {Université de Rennes 1}
+    {Rennes - FRANCE}
+    {}
+    {\underline{Main subjects}: Programming, Microchip, Telecommunication, Digital and Analogic Electronics.}
+    
+\section{Work experience}
+
+\cventry
+	{2014 - 2015}
+	{Aprentice Software Engineer}
+	{Orange Labs Products and Services, Cesson S\'evign\'e}
+	{Rennes - FRANCE}
+	{}
+	{Apprenticeship to develop software in \emph{Scala} following a \emph{DevOps} methodology in a team of 14 Metrology experts. Developing a solution of performance testing for servers; daily use of \emph{Docker} and \emph{Jenkins}.}
+
+\cventry
+    {From Apr. 14 to Jul. 14}
+    {Intern}
+    {Athlone Institute of Technology}
+    {Athlone - IRELAND}
+    {}
+    {Three months end-of-course internship; preparation of project subjects worked with \emph{Arduino}, \emph{Java}, \emph{HTML/CSS}, \emph{PHP} and \emph{C}; what I did is now used in Athlone Institute of Technology.}
+
+\section{Personal projects}
+\cventry
+	{2014 - 2015}
+    {Systems and network engineer}
+    {On my own}
+    {Rennes - FRANCE}
+    {}
+    {Management of my dedicated server; use of \emph{Docker} to manage virtual hosts and services, \emph{Jenkins} to do some \emph{DevOps} and deploy automatically some websites, like my web-portfolio: \href{http://www.colinleverger.fr}{http://www.colinleverger.fr}.}
+    
+\begin{comment}
+ 
+\section{MOOCS and certifications}
+\cventry
+    {2014}
+    {Certification PHP and MySQL}
+    {OpenClassroom}
+    {E-learning}
+    {}
+    {\emph{Building a website using PHP and MySQL.}}
+\cventry
+    {2014}
+    {Keys to becoming a community manager}
+    {OpenClassroom}
+    {E-learning}
+    {}
+    {\emph{Skills and methods to manage a community over social networking.}}
+
+\end{comment}
+   
+\section{Skills}
+\subsection{Language}
+\cvitemwithcomment{French}{Native}{}
+\cvitemwithcomment{English}{Level B2 \emph{(Common European Framework of References for Languages)}}{Independent user}
+
+\subsection{Computing}
+\cvitem{Languages}{Scala, Java, C, HTML/CSS, PHP, JavaScript, Bash/scripting, SQL, NoSQL, VHDL, \LaTeX}
+\cvitem{Paradigms}{Functional, imperative, object-oriented, concurrent programming, real-time programming}
+\cvitem{Tools}{Scala SBT, Git, Jenkins, Docker, Microsoft Office, texmaker, IntelliJ, Eclipse, Sublime Text, MySQL, mongoDB, xampp, iterm, SSH}
+
+\subsection{Interests}
+\cvitem{Music}{Guitarist / Bassist / Singer for 16 years, had several bands.}
+\cvitem{Swimming}{Competition and training three times per week.}
+\cvitem{Kayaking}{Kayaking for two years in Lannion.}
+\cvitem{MOOCS}{Following MOOCS in \href{www.coursera.org}{Coursera} about subjects like Recommendation Systems, Machine Learning, \ldots}
+
+\section{References}
+\cventry{School Tutor}{Gwenol\'e Lecorv\'e}{\href{mailto:gwenole.lecorve@enssat.fr}{gwenole.lecorve@enssat.fr}}{+33 (0)2 99 847239}{following my academic trajectory}{}
+\cventry{Head teacher}{Pierre Alain}{\href{mailto:pierre.alain@enssat.fr}{pierre.alain@enssat.fr}}{+33 (0)2 96 469154}{responsible of apprenticeship section at E.N.S.S.A.T}{}
+\cventry{Manager}{Régis Marguerie}{\href{mailto:regis.marguerie@orange.com}{regis.marguerie@orange.com}}{+33 (0)6 07 585086}{Manager at Orange during my apprenticeship}{}
+
+\end{document}
+
+%% end of file `template.tex'.
