@@ -18,6 +18,31 @@
 \RequirePackage{xcolor}
 \definecolor{pblue}{HTML}{4CAF50}
 
+
+%-- Smartdiagram
+\usepackage{smartdiagram}
+\smartdiagramset{
+    bubble center node font = \footnotesize,
+    bubble node font = \footnotesize,
+    % specifies the minimum size of the bubble center node
+    bubble center node size = 0.5cm,
+    %  specifies the minimum size of the bubbles
+    bubble node size = 0.5cm,
+    % specifies which is the distance among the bubble center node and the other bubbles
+    distance center/other bubbles = 0.3cm,
+    % sets the distance from the text to the border of the bubble center node
+    distance text center bubble = 0.5cm,
+    % set center bubble color
+    bubble center node color = pblue,
+    % define the list of colors usable in the diagram
+    set color list = {lightgray, materialcyan, orange, green, materialorange, materialteal, materialamber, materialindigo, materialgreen, materiallime},
+    % sets the opacity at which the bubbles are shown
+    bubble fill opacity = 0.6,
+    % sets the opacity at which the bubble text is shown
+    bubble text opacity = 0.5,
+}
+%--
+
 \begin{document}
 \header{Colin}{LEVERGER}
       {Apprentice Computer \& DevOps Engineer}
@@ -41,7 +66,6 @@
     ~
   \section{E-Mail}
     \href{mailto:colinleverger@gmail.com}{\textbf{colinleverger@}\\gmail.com}
-    \href{mailto:me@colinleverger.fr}{\textbf{me@}\\colinleverger.fr}
     ~
   \section{Web \& Git}
     \href{http://www.colinleverger.fr}{colinleverger.fr}
@@ -49,18 +73,14 @@
     \href{https://github.com/ColinLeverger}{github/ColinLeverger}
     ~
   \section{Programming}
-    \includegraphics[scale=0.55]{img/programming.png}
+  TODO
     ~
   \section{Other Skills}
-    \textbf{\\GNU/Linux}\includegraphics[scale=0.40]{img/5stars.png}
-    \textbf{Git}\includegraphics[scale=0.40]{img/5stars.png}
-    \textbf{Docker}\includegraphics[scale=0.40]{img/4stars.png}
-    \textbf{Jenkins}\includegraphics[scale=0.40]{img/4stars.png}
-    \textbf{Scala}\includegraphics[scale=0.40]{img/2stars.png}
+  TODO
     ~
   \section{Personal Skills}
-  \hspace*{-1.3in}
-  \includegraphics[scale=0.55]{img/personal.png}
+  %\hspace*{-1.3in}
+  TODO
     ~
 \end{aside}
 
@@ -70,7 +90,7 @@
     {09/14 - Now}
     {Apprentice Software Engineer}
     {\href{http://www.orange.com/en/home}{Orange Labs Products \& Services}, Cesson S\'evign\'e - FRANCE}
-    {Apprenticeship to develop software in \emph{Scala} following a \emph{DevOps} methodology in a team of 14 Metrology experts. Developing a solution of performance testing for servers; daily use of \emph{Git}, \emph{Docker} and \emph{Jenkins}.}
+    {Apprenticeship to develop software in \emph{Scala} following a \emph{DevOps} methodology in a team of 14 Metrology experts. Developing a solution of performance testing for servers; daily use of \emph{Git}, \emph{Docker}, \emph{Jenkins}, \emph{Ansible} and \emph{OpenStack}.}
   \entry
     {02/15 - Now}
     {Systems and network engineer}
@@ -85,6 +105,12 @@
 
 \section{Higher education}
 \begin{entrylist}
+  \entry
+    {09/16 - Now}
+    {Erasmus}
+    {\href{http://www.ruc.dk/en/}{Roskilde University}, Roskilde - DENMARK}
+    {Lived 5 months in Denmark for the last year in E.N.S.S.A.T. engineering school.\\ 
+    Main subjects: service design and conception, Big Data, Danish.}
   \entry
     {09/14 - Now}
     {Master 2 Degree in Computer Engineering}
@@ -101,26 +127,27 @@
 \section{Certifications}
 \begin{entrylist}
   \entry
+    {07/16}
+    {Functional Programming Principles in Scala}
+    {Coursera, E-learning}
+    {\emph{Discovering Functional paradigm with the Scala language. The course is complemented by a series programming projects as homework assignments.}}
+  \entry
     {04/14}
     {Certification PHP \& MySQL}
     {OpenClassroom, E-learning}
-    {\emph{Building a website using PHP \& MySQL.}}
-  \entry
-    {03/14}
-    {Keys to become community manager}
-    {OpenClassroom, E-learning}
-    {\emph{Skills \& methods to manage community over social networking.}}
+    {\emph{Building a website using PHP \& MySQL.}} 
 \end{entrylist}
 
 \section{Skills}
 \begin{entrylist}
+%  \entry
+%    {Computing}
+%    {Languages}
+%    {}
+%    {Scala, Java, C, HTML/CSS, PHP, JavaScript, Bash/scripting, SQL, NoSQL, %VHDL, \LaTeX}
   \entry
+%    {}
     {Computing}
-    {Languages}
-    {}
-    {Scala, Java, C, HTML/CSS, PHP, JavaScript, Bash/scripting, SQL, NoSQL, VHDL, \LaTeX}
-  \entry
-    {}
     {Paradigms}
     {}
     {Functional, imperative, object-oriented, concurrent programming, real-time programming}
