@@ -1,0 +1,196 @@
+%!TEX TS-program = xelatex
+\documentclass[]{friggeri-cv}
+\usepackage{afterpage}
+\usepackage{hyperref}
+\usepackage{ucs}
+\usepackage[utf8x]{inputenc}
+\usepackage{color}
+\usepackage{xcolor}
+\hypersetup{
+    pdftitle={Colin LEVERGER},
+    pdfauthor={Colin LEVERGER},
+    pdfsubject={CV},
+    pdfkeywords={CV, Colin LEVERGER, young DevOps Engineer},
+    colorlinks=false,       % no lik border color
+    allbordercolors=white    % white border color for all
+}
+% \addbibresource{bibliography.bib}
+\RequirePackage{xcolor}
+\definecolor{pblue}{HTML}{4CAF50}
+
+
+%-- Smartdiagram
+\usepackage{smartdiagram}
+\smartdiagramset{
+    bubble center node font = \footnotesize,
+    bubble node font = \footnotesize,
+    % specifies the minimum size of the bubble center node
+    bubble center node size = 0.5cm,
+    %  specifies the minimum size of the bubbles
+    bubble node size = 0.5cm,
+    % specifies which is the distance among the bubble center node and the other bubbles
+    distance center/other bubbles = 0.3cm,
+    % sets the distance from the text to the border of the bubble center node
+    distance text center bubble = 0.5cm,
+    % set center bubble color
+    bubble center node color = pblue,
+    % define the list of colors usable in the diagram
+    set color list = {lightgray, materialcyan, orange, green, materialorange, materialteal, materialamber, materialindigo, materialgreen, materiallime},
+    % sets the opacity at which the bubbles are shown
+    bubble fill opacity = 0.6,
+    % sets the opacity at which the bubble text is shown
+    bubble text opacity = 0.5,
+}
+%--
+
+\begin{document}
+\header{Colin}{LEVERGER}
+      {Apprentice Computer \& DevOps Engineer}
+
+% Fake text to add separator      
+\fcolorbox{white}{gray}{\parbox{\dimexpr\textwidth-2\fboxsep-2\fboxrule}{%
+.....
+}}
+
+% In the aside, each new line forces a line break
+\begin{aside}
+  \includegraphics[scale=0.145]{img/rounded.png}
+  \section{Address}
+    1B rue du Couesnon
+    35133 JAVENE
+    FRANCE
+    ~
+  \section{Tel \& Skype}
+    +33 (0)633 504722
+    colin.leverger5
+    ~
+  \section{E-Mail}
+    \href{mailto:colinleverger@gmail.com}{\textbf{colinleverger@}\\gmail.com}
+    ~
+  \section{Web \& Git}
+    \href{http://www.colinleverger.fr}{colinleverger.fr}
+    \href{https://www.linkedin.com/in/colinleverger}{lnkdin.me/cleverger}
+    \href{https://github.com/ColinLeverger}{github/ColinLeverger}
+    ~
+  \section{Languages}
+  \textbf{Main}:
+  \emph{Scala}: 3+ years
+  \emph{Java}: 4+ years
+  \emph{Bash/Unix}: 4+ years
+  \textbf{Experienced}:
+  \emph{HTML/CSS}: 3 years
+  \emph{PHP}: 2 years
+  \emph{JavaScript}: 2 years
+  \textbf{Used in the past}
+  \emph{C}: 1 year
+  \emph{SQL}: 1 year
+  \textbf{Interests \& curiosity}
+  \emph{Python, R}: few projects
+    ~
+  \section{DevOps exp.}
+  \emph{Jenkins}: 3+ years
+  \emph{Docker}: 3+ years
+  \emph{Ansible}: 1+ year
+  \emph{OpenWatt}: 1+ year
+  \emph{JMeter}: 1 year
+    ~
+  \section{Stats \& facts}
+  %\hspace*{-1.3in}
+  \includegraphics[scale=0.55]{img/personal.png}
+    ~
+\end{aside}
+
+\section{Experience}
+\begin{entrylist}
+  \entry
+    {09/14 - Now}
+    {Apprentice Software Engineer}
+    {\href{http://www.orange.com/en/home}{Orange Labs Products \& Services}, Cesson S\'evign\'e - FRANCE}
+    {Apprenticeship to develop software in \emph{Scala} following a \emph{DevOps} methodology in a team of 14 Metrology experts. Developing a solution of performance testing for servers; daily use of \emph{Git}, \emph{Docker}, \emph{Jenkins}, \emph{Ansible} and \emph{OpenStack}.}
+  \entry
+    {02/15 - Now}
+    {Systems and network engineer}
+    {On my own - FRANCE}
+    {Management of my dedicated server; use of \emph{Docker} to manage virtual hosts and services, \emph{Jenkins} to do some \emph{DevOps} and deploy some websites automatically, like my web-portfolio: \href{http://www.colinleverger.fr}{http://www.colinleverger.fr}.}
+  \entry
+    {04/14 - 07/14}
+    {Internship}
+    {\href{http://www.ait.ie/}{Athlone Institute of Technology}, Athlone - IRELAND}
+    {Three months end-of-course internship; preparation of project subjects for students. Worked with \emph{Arduino}, \emph{Java}, \emph{HTML/CSS}, \emph{PHP} and \emph{C}; what I did is now used in Athlone Institute of Technology.}
+\end{entrylist}
+
+\section{Higher education}
+\begin{entrylist}
+  \entry
+    {09/16 - 02/17}
+    {ERASMUS}
+    {\href{http://www.ruc.dk/en/}{Roskilde University}, Roskilde - DENMARK}
+    {5 months abroad, ERASMUS exchange in Denmark for the last academic semester of my Master Degree.\\ 
+    Main subjects: IT-architecture and user driven software design, Big Data, Danish.}
+  \entry
+    {09/14 - 09/17}
+    {Master 2 Degree in Computer Engineering}
+    {\href{http://www.enssat.fr}{E.N.S.S.A.T.}, Lannion - FRANCE}
+    {Curriculum Networking, Multimedia \& Computing Science.\\
+    Main subjects: Network Applications, Systems Architecture, Design of Services \& of User Interfaces.}
+  \entry
+    {2012 - 2014}
+    {Two year Undergraduate University Degree of Technology in Electronics and Computing}
+    {\href{https://iut-rennes.univ-rennes1.fr/les-6-departements/genie-electrique-informatique-industrielle}{Universit\'e de Rennes 1}, Rennes - FRANCE}
+    {Main subjects: Programming, Microchip, Telecommunication, Digital and Analogic Electronics.}
+\end{entrylist}
+
+\section{Certifications}
+\begin{entrylist}
+  \entry
+    {07/16}
+    {Functional Programming Principles in Scala}
+    {Coursera, E-learning}
+    {\emph{Discovering Functional paradigm with the Scala language. The course is complemented by a series programming projects as homework assignments.}}
+  \entry
+    {04/14}
+    {Certification PHP \& MySQL}
+    {OpenClassroom, E-learning}
+    {\emph{Building a website using PHP \& MySQL.}} 
+\end{entrylist}
+
+\section{Skills}
+\begin{entrylist}
+%  \entry
+%    {Computing}
+%    {Languages}
+%    {}
+%    {Scala, Java, C, HTML/CSS, PHP, JavaScript, Bash/scripting, SQL, NoSQL, %VHDL, \LaTeX}
+  \entry
+%    {}
+    {Computing}
+    {Paradigms}
+    {}
+    {Functional, imperative, object-oriented, concurrent programming, real-time programming}
+  \entry
+    {}
+    {Notable tools}
+    {}
+    {Scala SBT, Git, Microsoft Office, texmaker, IntelliJ, Eclipse, Sublime Text, MySQLWorkbench, mongoDB, Apache, SSH, Terminal, macOS, }
+  \entry
+    {Hobbies}
+    {Music}
+    {\href{https://www.youtube.com/channel/UCPBCzj-0apmax9lFwj3qKhA}{\textbf{www.youtube.fr/colinleverger}}}
+    {Guitarist / Bassist / Singer, had several bands}
+  \entry
+    {}
+    {Sports}
+    {}
+    {Kayaking / Swimming / Long hikes / Badminton}
+  \entry
+    {Languages}
+    {French}
+    {}
+    {Native}
+  \entry
+    {}
+    {English}
+    {}
+    {Fluent \& good technical skills - B2 level}
+\end{entrylist}
+\end{document}
