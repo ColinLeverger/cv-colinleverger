@@ -6,7 +6,7 @@
 % available at http://www.latex-project.org/lppl/.
 
 \documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
-
+\usepackage[francais]{babel}
 \usepackage{verbatim} %comments
 
 % moderncv themes
@@ -27,9 +27,9 @@
 
 % personal data
 \name{Colin}{Leverger}
-\title{Computer and DevOps Apprentice Engineer}                               % optional, remove / comment the line if not wanted
+\title{Ingénieur Logiciel}                               % optional, remove / comment the line if not wanted
 \address{1 bis rue du Couesnon}{35133 JAVENE}{FRANCE}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
-\phone[mobile]{+33~(0)633~504722}                   % optional, remove / comment the line if not wanted
+\phone[mobile]{+33~(0)6~33~50~47~22}                   % optional, remove / comment the line if not wanted
 %\phone[fixed]{+2~(345)~678~901}                    % optional, remove / comment the line if not wanted
 %\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
 \email{colinleverger@gmail.com}                               % optional, remove / comment the line if not wanted
@@ -55,92 +55,71 @@
 %-----       resume       ---------------------------------------------------------
 \makecvtitle
 
-\section{Higher education}
+\section{Formation}
 
 \cventry
 	{2014 - 2017}
-	{Master 2 Degree in Computer Science via an apprenticeship program at a highly selective graduate engineering school}
+	{École d'ingénieur en apprentissage}
 	{E.N.S.S.A.T.}
 	{Lannion - FRANCE}
 	{}
-	{Curriculum Networking, Multimedia \& Computing Science. Five months ERASMUS in Denmark in 2016.\\
-    \underline{Main subjects}: Network Applications, Systems Architecture, Design of Services \& of User Interfaces.}  % arguments 3 to 6 can be left empty
+	{Spécialité Informatique, Multimédia et Réseaux. ERASMUS de cinq mois au Danemark pour le dernier semestre académique.\\
+    \underline{Sujets principaux}: Réseaux, Architecture des Systèmes, Design de Services et d'Interfaces Utilisateurs.}  % arguments 3 to 6 can be left empty
 
 \cventry
 	{2012 - 2014}
-    {Two year Undergraduate University Degree of Technology in Electronics and Computing}
+    {DUT Génie Électrique et Informatique Industrielle}
     {Université de Rennes 1}
     {Rennes - FRANCE}
     {}
-    {\underline{Main subjects}: Programming, Microchip, Telecommunication, Digital and Analogic Electronics.}
+    {\underline{Sujets principaux}: Programmation, Microchip, Télécomunications, Électronique digitale et analogique.}
     
-\section{Work experience}
+\section{Expériences}
 
 \cventry
 	{2014 - 2015}
-	{Apprentice Software Engineer}
+	{Apprenti Ingénieur Logiciel et Dévelopeur}
 	{Orange Labs Products and Services, Cesson S\'evign\'e}
 	{Rennes - FRANCE}
 	{}
-	{Apprenticeship to develop software in \emph{Scala} following a \emph{DevOps} methodology in a team of 14 Metrology experts. Developing a solution of performance testing for servers; daily use of \emph{Git}, \emph{Docker} and \emph{Jenkins}.}
+	{Travail en tant que développeur \emph{Scala}, utilisation d'une méthodologie \emph{DevOps} dans une équipe de 14 experts technique. Développement d'une solution maison de test de performance pour serveurs; usage journalier de \emph{Git}, \emph{Docker} et \emph{Jenkins}.}
 
 \cventry
-    {From Apr. 14 to Jul. 14}
-    {Intern}
+    {Avril - Juin 2014}
+    {Stagiaire}
     {Athlone Institute of Technology}
-    {Athlone - IRELAND}
+    {Athlone - IRLANDE}
     {}
-    {Three months end-of-course internship; preparation of project subjects for students. Worked with \emph{Arduino}, \emph{Java}, \emph{HTML/CSS}, \emph{PHP} and \emph{C}; what I did is now used in Athlone Institute of Technology.}
+    {Stage de fin d'études d'une durée de 3 mois; préparation de sujets de projet pour les étudiants. Travail avec \emph{Arduino}, \emph{Java}, \emph{HTML/CSS}, \emph{PHP} et le langage \emph{C}; mon travail est désormais utilisé par l'université.}
 
-\section{Personal projects}
+\section{Projets personnels}
 \cventry
-	{2014 - 2015}
-    {Systems and Network Engineer}
-    {On my own}
+	{2014 - 2017}
+    {Ingénieur Système et Réseaux}
+    {}
     {Rennes - FRANCE}
     {}
-    {Management of my dedicated server; use of \emph{Docker} to manage virtual hosts and services, \emph{Jenkins} to do some \emph{DevOps} and deploy automatically some websites, like my web-portfolio: \href{http://www.colinleverger.fr}{http://www.colinleverger.fr}.}
-    
-\begin{comment}
- 
-\section{MOOCS and certifications}
-\cventry
-    {2014}
-    {Certification PHP and MySQL}
-    {OpenClassroom}
-    {E-learning}
-    {}
-    {\emph{Building a website using PHP and MySQL.}}
-\cventry
-    {2014}
-    {Keys to becoming a community manager}
-    {OpenClassroom}
-    {E-learning}
-    {}
-    {\emph{Skills and methods to manage a community over social networking.}}
-
-\end{comment}
+    {Gestion de mon serveur dédié. Utilisation de \emph{Docker} et d'\emph{Ansible} pour la création de services virtuels, de \emph{Jenkins} pour faire de l'intégration continue et pour déployer mes sites web automatiquement à chaque nouvelle version.}
    
-\section{Skills}
-\subsection{Language}
-\cvitemwithcomment{French}{Native}{}
-\cvitemwithcomment{English}{Level B2 \emph{(Common European Framework of References for Languages)}}{Independent user}
+\section{Compétences}
+\subsection{Langage}
+\cvitemwithcomment{Français}{Langue natale}{}
+\cvitemwithcomment{Anglais}{Niveau B2}{Utilisateur indépendant}
 
-\subsection{Computing}
-\cvitem{Languages}{Scala, Java, Python, R, Julia, C, HTML/CSS, PHP, JavaScript, Bash/scripting, SQL, NoSQL, \LaTeX}
-\cvitem{Paradigms}{Functional, imperative, object-oriented, concurrent programming, real-time programming}
-\cvitem{Tools}{Scala sbt, Play Framework, Git, Jenkins, Ansible, OpenWatt, Docker, Microsoft Office, texmaker, IntelliJ, MySQL, mongoDB, xampp, SSH, Neo4j, Gephi, Jmeter, Gatling}
+\subsection{Informatique}
+\cvitem{Langages}{Scala, Java, Python, R, Julia, C, HTML/CSS, PHP, JavaScript, Bash/scripting, SQL, NoSQL, \LaTeX}
+\cvitem{Paradigmes}{Fonctionnel, impératif, orienté objet, programmation concurrente, programmation temps réel}
+\cvitem{Outils}{Scala sbt, Play Framework, Git, Jenkins, Ansible, OpenWatt, Docker, Microsoft Office, texmaker, IntelliJ, MySQL, mongoDB, xampp, SSH, Neo4j, Gephi, Jmeter, Gatling}
 
-\subsection{Interests and Hobbies}
-\cvitem{Music}{Guitarist / Bassist / Singer for 16 years, had several bands.}
-\cvitem{Badminton}{Training one time per week, intermediate level.}
-\cvitem{Kaggle}{Improving my data science skills on competitions and challenges on the Kaggle platform.}
-\cvitem{Code}{Several projects, from System Administration on my dedicated server to contributions on Open Source projects.}
-\cvitem{MOOCS}{Following MOOCS in \href{www.coursera.org}{Coursera} about subjects like Recommendation Systems, Scala, \ldots}
+\subsection{Intérêts et Hobbies}
+\cvitem{Musique}{Guitariste / Bassiste / Chanteur depuis 10 ans, à eu plusieurs groupes.}
+\cvitem{Badminton}{Entrainement une fois par semaine, niveau intermédiaire.}
+\cvitem{Kaggle}{Participantion à des concours et challenges sur la plateforme Kaggle.}
+\cvitem{MOOCS}{Formation continue sur la plateforme \href{www.coursera.org}{Coursera}, sur des sujets tels que les Moteurs de Recommandation, le langage Scala, \ldots}
 
-\section{References}
-\cventry{School Tutor}{Gwenol\'e Lecorv\'e}{\href{mailto:gwenole.lecorve@enssat.fr}{gwenole.lecorve@enssat.fr}}{+33 (0)2 99 847239}{following my academic trajectory}{}
-\cventry{Manager}{Régis Marguerie}{\href{mailto:regis.marguerie@orange.com}{regis.marguerie@orange.com}}{+33 (0)6 07 585086}{manager at Orange during my apprenticeship}{}
+\section{Références}
+\cventry{Tuteur École}{Gwenol\'e Lecorv\'e}{\href{mailto:gwenole.lecorve@enssat.fr}{gwenole.lecorve@enssat.fr}}{+33 (0)2 99 84 72 39}{encadrant pendant mes 3 années d'école}{}
+\cventry{Manager}{Régis Marguerie}{\href{mailto:regis.marguerie@orange.com}{regis.marguerie@orange.com}}{+33 (0)6 07 585086}{manager à Orange durant mon apprentissage}{}
 
 \end{document}
 
