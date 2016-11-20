@@ -1,7 +1,9 @@
 # CVs Colin LEVERGER
 LaTeX CVs of Colin LEVERGER
 
-# University and Design CV
+[![Build Status](http://jenkins.colinleverger.fr/job/cv_master/badge/icon)](http://jenkins.colinleverger.fr/job/cv_master/)
+
+# University and Fancy CV
 
 There are two versions of the CV. 
 
