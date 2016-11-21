@@ -7,7 +7,7 @@ LaTeX CVs of Colin LEVERGER
 
 There are two versions of the CV. 
 
-Fancy version (for startups and job application): [
+Fancy version (for startups and job application):
 *  [English version](https://github.com/ColinLeverger/cv-colinleverger/blob/master/en/design/Colin-LEVERGER.pdf)
 
 Traditional version (for university application):
