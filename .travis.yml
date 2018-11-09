@@ -1,0 +1,5 @@
+# whitelist
+language: nix
+script: echo toto
+after_success:
+- curl -T en/design/Colin-LEVERGER.pdf --ftp-create-dirs --user ${SFTP_USER}:${SFTP_PASSWORD} ftp://${FTP}:21/assets/pdf/Colin-LEVERGER.pdf \;
