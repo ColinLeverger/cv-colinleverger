@@ -76,7 +76,7 @@
 
 %%% modified by Karol Kozioł for ShareLaTex use
 \RequirePackage[quiet]{fontspec}
-\RequirePackage[math-style=TeX,vargreek-shape=unicode]{unicode-math}
+\RequirePackage{unicode-math}
 
 \newfontfamily\bodyfont
 [BoldFont=texgyreheros-bold.otf,
