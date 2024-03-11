@@ -1,0 +1,135 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+\usepackage[francais]{babel}
+\usepackage{verbatim} %comments 
+
+% moderncv themes
+\moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{green}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+\usepackage{pdfpages}
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+
+% adjust the page margins
+\usepackage[scale=0.9, bottom=0.4cm,top=1cm]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Colin}{LEVERGER}
+\title{Ingénieur Logiciel}                               % optional, remove / comment the line if not wanted
+\address{Centre ville}{35000 RENNES}{FRANCE}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\phone[mobile]{+33 (0)6 30 83 62 59}                   % optional, remove / comment the line if not wanted
+%\phone[fixed]{+2~(345)~678~901}                    % optional, remove / comment the line if not wanted
+%\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
+\email{colinleverger@mailbox.org}                               % optional, remove / comment the line if not wanted
+\homepage{www.colinleverger.fr}                         % optional, remove / comment the line if not wanted
+\extrainfo{\href{https://www.linkedin.com/in/colinleverger}{LinkedIn: lnkdin.me/cleverger}}                 % optional, remove / comment the line if not wanted
+%\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{Formation}
+
+\cventry
+{2014 — 2017}
+{École d'Ingénieur en Apprentissage}
+{E.N.S.S.A.T.}
+{Lannion — FRANCE}
+{}
+{Spécialité Informatique, Multimédia et Réseaux. ERASMUS de cinq mois au Danemark.\\
+ \underline{Sujets principaux} : Réseaux, Architecture des Systèmes, Design de Services et d'Interfaces Utilisateurs.}  % arguments 3 to 6 can be left empty
+
+\cventry
+{2012 — 2014}
+{DUT Génie Électrique et Informatique Industrielle}
+{Université de Rennes 1}
+{Rennes — FRANCE}
+{}
+{\underline{Sujets principaux} : Programmation, Microchip, Télécomunications, Électronique digitale et analogique.}
+
+\section{Expériences}
+
+\cventry
+{2017 — 2020}
+{Doctorant}
+{Orange Labs and Services, Cesson S\'evign\'e}
+{Rennes — FRANCE}
+{}
+{Recherches dans le domaine du \emph{planning capacitaire}; développement d'algorithmes d'\emph{Apprentissage Automatique} et étude de \emph{séries temporelles} pour faire des prédictions dans le domaine des \emph{performances de nos infrastructures}.}
+
+
+\cventry
+{2014 — 2017}
+{Apprenti Ingénieur Logiciel et Dévelopeur}
+{Orange Labs and Services, Cesson S\'evign\'e}
+{Rennes — FRANCE}
+{}
+{Travail en tant que développeur \emph{Scala} dans une équipe de 14 experts technique. Développement d'un logiciel de test de performance pour serveurs; usage quotidien de \emph{Git}, \emph{Docker}, \emph{Jenkins}, \emph{OpenStack}, \emph{Ansible}.\\\underline{Projet de Fin d'Études} : recherche et développement; élaboration et déploiement d'algorithmes de machine learning dans le domaine de la maintenance prédictive ; utilisation de \emph{Scala}, \emph{Spark}, \emph{Elasticsearch}, \emph{Logstash}, \emph{Kibana}, \emph{R}, \emph{influxDB}, \emph{Grafana}, \emph{Finatra}.}
+
+\cventry
+{Avril — Juin 2014}
+{Stagiaire}
+{Athlone Institute of Technology}
+{Athlone - IRLANDE}
+{}
+{Stage de fin d'études d'une durée de 3 mois; préparation de sujets de projet pour les étudiants. Travail avec \emph{Arduino}, \emph{Java}, \emph{HTML/CSS}, \emph{PHP} et le langage \emph{C}.}
+
+\section{Projets personnels}
+\cventry
+{2014 — 2017}
+{Ingénieur Système et Réseaux}
+{}
+{Rennes — FRANCE}
+{}
+{Gestion de mon serveur dédié. Utilisation de \emph{Docker} et d'\emph{Ansible} pour la création de services virtuels, de \emph{Jenkins} pour faire de l'intégration continue et pour déployer mes sites web automatiquement à chaque nouvelle version.}
+
+\section{Compétences}
+\subsection{Langage}
+\cvitemwithcomment{Français}{Langue natale}{}
+\cvitemwithcomment{Anglais}{Niveau B2}{Bon niveau, pratique courante pendant 5 mois en ERASMUS au Danemark.}
+
+\subsection{Informatique}
+\cvitem{Langages}{Scala, Java, Python, R, C, HTML/CSS, PHP, JavaScript, Bash/scripting, SQL, NoSQL, \LaTeX}
+\cvitem{Paradigmes}{Fonctionnel, impératif, orienté objet, programmation concurrente et parallèle, temps réel}
+\cvitem{Outils}{Scala sbt, Play Framework, Finatra, Git, Jenkins, Ansible, OpenWatt, Docker, texmaker, IntelliJ, MySQL, mongoDB, xampp, SSH, Neo4j, Gephi, Jmeter, Gatling, influxDB, ELK, Grafana, influxDB}
+
+\subsection{Intérêts et Hobbies}
+\cvitem{Musique}{Guitariste / Bassiste / Chanteur depuis 10 ans dans plusieurs groupes. Musique Assistée par Ordinateur.}
+\cvitem{Course}{Pratique régulière, niveau intermédiaire.}
+\cvitem{Kaggle}{Participation à des concours et challenges \emph{Data Science} sur la plateforme Kaggle.}
+\cvitem{MOOCs}{Formation continue sur la plateforme \href{www.coursera.org}{Coursera}, sur des sujets tels que les Moteurs de Recommandation, Spécialisation sur le langage Scala, Spécialisation sur \emph{Google Cloud Platform}\ldots}
+
+\section{Références}
+\cventry{Manager}{Régis MARGUERIE}{\href{mailto:regis.marguerie@orange.com}{regis.marguerie@orange.com}}{+33 (0)6 07 58 50 86}{manager à Orange}{}
+
+\end{document}
+
+%% end of file `template.tex'.
+
